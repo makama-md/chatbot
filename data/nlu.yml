@@ -1,0 +1,1220 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - how far
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - goodafternoon
+    - good day
+    - goodday
+
+- intent: goodbye
+  examples: |
+    - cu
+    - thank you so much for the informations
+    - thanks
+    - thanks a lot
+    - thanks for the info
+    - good by
+    - cee you later
+    - good night
+    - have a nice day
+    - bye
+    - goodbye
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - ok
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - who are you?
+    - what do you do?
+    - who is it?
+    - who are u
+    - who are y
+
+- intent: faq/ask_ncair
+  examples: |
+    - What's NCAIR?
+    - define ncair
+    - who is ncair
+    - is ncair an agency of govt
+    - ncair agency of government?
+    - is the centre an agency of government?
+    - ncair ministry 
+    - is ncair a centre of government
+    - is the centre a ministry
+    - ministry of government?
+    - ncair
+
+- intent: faq/ask_ncairacronm
+  examples: |
+    - What's the acronym ncair?
+    - what does ncair stand for
+    - what does ncair mean
+    - meaning of ncair
+    - what is the full meaining of ncair
+    - ncair acronym
+
+
+- intent: faq/ask_nitda
+  examples: |
+    - What's nitda?
+    - who is nitda
+    - is nitda an agency of govt
+    - nitda agency of government?
+    - is the centre an agency of government?
+    - nitda ministry 
+    - is nitda a agency of government
+    - is the agency a ministry
+    - ministry of government?
+    - nitda
+
+- intent: faq/ask_nitdaacronm
+  examples: |
+    - What's the acronym ncair?
+    - what does nitda stand for
+    - what does NITDA mean
+    - meaning of NITDA
+    - what is the full meaining of nitda
+
+- intent: faq/ask_relationship_nitda
+  examples: |
+    - What is ncair's relationship with NITDA?
+    - What is its relationship with NITDA?
+    - What is its relationship with Ministry of Digital Economy?
+    - relationship with NCC
+    - does ncair have a relationship with nitda
+    - does ncair belong to nitda
+    - is the centre related to National Information Technology Development Agency
+
+- intent: faq/ask_email
+  examples: |
+    - what's your email address
+    - your email please
+    - email adress
+    - how can i contact you via emal
+    - how do I write to the center
+
+- intent: faq/ask_nitdaemail
+  examples: |
+    - what's nitda email address
+    - nitda email please
+    - nitda email adress
+    - how can i contact nitda via emal
+    - how do I write to nitda
+
+- intent: faq/ask_phone
+  examples: |
+    - what's your phone number
+    - your contact numbers, please
+    - contact numbrs plz
+    - who should i call for help
+    - how can i contact you via phone
+    - who should i call to ask for help
+    - numbers to call for enquiries
+    - help line 
+    - ask helpline 
+
+- intent: faq/ask_opentoeveryone
+  examples: |
+    - Is NCAIR opened to everyone?
+    - is NCAIR open outsiders for practical activities
+    - who can visit the centre
+    - can i visit the fablab
+    - If I have research, can I come in freely?
+- intent: faq/ask_robotics
+  examples: |
+    - Will Creation of Robotics in Nigerian help the economy?
+
+- intent: faq/ask_achievement
+  examples: |
+    - What are the most interesting emerging technologies you have achieved in your Agency?
+    - what stides have you achieved
+    - what successes has ncair recorded
+    - your achivement so far 
+    - major achivements 
+    - ncair impact
+    - what are NCAIR achievements
+    - ncair achivements
+    - achivements of the center
+    - what are the project achieve so far in nitda
+    - what are the project achieve so far in ncair
+ 
+- intent: faq/ask_applyjob
+  examples: |
+    - How can I apply for a job at NCAIR?
+    - I want to apply for a job at ncair
+    - I want to apply for a job at the centre
+    - any vacancy?
+    - do you have a job vacancies
+    - any job?
+    - job offers
+    - how do i apply for job
+    - vacancy opportunities
+    - job opportunities
+    - How can I work in NCAIR?
+    - how do i apply for job at nitda
+
+- intent: faq/ask_internship
+  examples: |
+    - Can I apply for an internship at NCAIR?
+    - does ncair accepts interns
+    - can I intern at the NCAIR
+    - who can apply for internship
+    - who can apply for siwes, IT, industrial training, attachment
+
+- intent: faq/ask_howinternship
+  examples: |   
+    - how can i join internship
+    - how to be an intern at the centre
+    - how do i join internship program
+    - internship requirement
+    - internship application
+
+- intent: faq/ask_whatnano
+  examples: |   
+    - what's nano-internship
+    - explain nano-intersnhip
+    - define nanointernship
+    - nano-internship
+
+- intent: faq/ask_posttoncair
+  examples: |
+    - Can I be posted to NCAIR for my NYSC program?
+    - can i serve as a copper at ncair
+    - national youth service program at the centre
+    - can i do nysc at ncair
+    - can a corp member be posted to ncair
+
+- intent: faq/ask_nanointern
+  examples: |
+    - What are the requirements for accepting nano interns?
+    - how do i join nano internship program
+    - how can i apply for the nano-internship
+    - nano-iternship application requirements
+    - nan0-internship apply
+    - how to be a nano-intern at the centre
+    - how a siwes, IT student join your nano-internship
+    - how can a graduate student join your nano-internship
+
+- intent: faq/ask_purpose
+  examples: |
+    - What is the purpose of ncair?
+    - mandate of the centre
+    - essence of ncair
+    - why as NCAIR created
+    - role of ncair
+    - benefits of ncair
+    - significance of ncair
+    - ncair's role
+    - responsibilities of ncair
+    - ncair responsibilities
+    - what the future prospect of ncair
+    - What are the main Importance of ncair in nigeria
+    - mandate of ncair
+    - significance of ncair
+    - objectives of NCAIR
+    - goal of NCAIR
+
+- intent: faq/ask_facility
+  examples: |
+    - Can students members come to the center to use its facilities?
+    - Can nysc members come to the center to use its facilities?
+    - Can corp members come to the center to use its facilities?
+    - can civil servants use your resources
+
+
+- intent: faq/ask_recruiting
+  examples: |
+    - Is NCAIR recruiting?
+    - is ncair currently hiring
+    - is ncair presently hiring  
+    - can i be hired
+    - is ncair offering jobs 
+    - are you recruiting
+    - are you hiring
+
+- intent: faq/ask_happens
+  examples: |
+    - what happens at NCAIR?
+    - what goes on at ncair
+    - what do you do at ncair
+    - what do you do in the centre
+    - role of ncair
+    - ncair's roles
+    - function of ncair
+
+
+- intent: faq/ask_work
+  examples: |
+    - Who can work at NCAIR?
+    - what kind of professionals does ncair hire
+    - who does ncair give jobs to
+    - who does ncair offer jobs to
+    - ncair jobs requirements
+
+# - intent: faq/ask_assist
+#   examples: |
+#     - How does NCAIR assist start-ups in Nigeria?
+#     - can my startup get help from the center
+#     - can my startup be funded
+#     - can my idea get support
+#     - can my be incubated
+#     - programs for startups
+#     - do you have programs for start ups
+
+- intent: faq/ask_advance_training
+  examples: |
+    - Does the center offer support for obtaining advanced training?
+
+# - intent: faq/ask_commercialize
+#   examples: |
+#     - Is NCAIR Drone unit going to be commercializing its produced drones to sectors for their various activities, if yes what is the procedure to attain it?
+#     - do you sell your products
+#     - are your reseaches for sell
+- intent: faq/ask_mentors
+  examples: |
+    - Are there any mentors in the center?
+- intent: faq/ask_ngo
+  examples: |
+    - Is NCAIR an NGO?
+    - NCAIR is a subsidiary of where
+    - is ncair a non-governmental organisation
+    - is the centrre a for-profit-organization
+    - is it a private firm
+    - ncair a private entity?
+
+- intent: faq/ask_training_period
+  examples: |
+    - How long does NCAIR training last?
+    - Training duration for your programs, events
+
+- intent: faq/ask_attendance_support
+  examples: |
+    - Will the center support attendance at industry conferences?
+    - do you help people going to conferences
+
+- intent: faq/ask_learn
+  examples: |
+    - How do you help people learn new things?
+    - do you support people to learn emerging technology
+    
+
+- intent: faq/ask_resources
+  examples: |
+    - What resources are available at the center?
+    - what infrastructure do you have at the centre
+- intent: faq/ask_capacity_building
+  examples: |
+    - How many people the center train in capacity building?
+    - how many people have you trained at ncair
+    - Training Statistics
+    - Metrics on students trainned at ncair
+- intent: faq/ask_training_offer
+  examples: |
+    - What training can I expect during or after I join the center?
+    - do you traind student ?
+    - do you train student at NCAIR?
+ 
+# - intent: faq/ask_support_company_idea
+#   examples: |
+#     - Can you support my company?
+#     - I have an innovative idea, can NCAIR help me develop it?
+- intent: faq/ask_funding
+  examples: |
+    - can my idea be developed at the centre
+- intent: faq/ask_training_fee
+  examples: |
+    - Are NCAIR training free?
+    - Is there any form of payment for the Program?
+    - are kids or parents pay a fee
+    - how much does it cost? 
+    - NCAIR training fee   
+- intent: faq/ask_certification
+  examples: |
+    - Does NCAIR issues certifications for training?
+    - can i obtain a ceritficcate after training
+    - do you give cerificatation for traing
+# - intent: faq/ask_acceptstartups
+#   examples: |
+#     - Does NCAIR accept startups that are not into AI and Robotics?
+#     - ncair non-AI startups
+
+# - intent: faq/ask_startups_requirement
+#   examples: |
+#     - What are the requirements for accepting startups who plans to work with NCAIR?
+#     - requirements for startups to join ncair
+#     - requirements for startups to partner with ncair
+#     - requirements for startups to partner the centre
+
+- intent: faq/ask_organize_training
+  examples: |
+    - Does NCAIR organize any form of training for the public probably on AI awareness and sort of that?
+- intent: faq/ask_school
+  examples: |
+    - How can my school take part in capacity building for students?
+    - can my school register its students to participate in ncair's activities
+- intent: faq/ask_data
+  examples: |
+    - Does NCAIR has access to data for its machine learning and deep learning unit?
+- intent: faq/ask_sell
+  examples: |  
+    - Can I sell my final year project to NCAIR?
+    - do you want to buy my final  project 
+- intent: faq/ask_sponsorship
+  examples: |
+    - Do you sponsor students?
+    - Do you help students?
+    - is anything like sponsorship in ncair
+    - Do you sponsor graduates?
+- intent: faq/ask_elearning
+  examples: |
+    - Does your center provide materials and equipment for effective learning?
+    - Do you offer eLearning for the public?
+- intent: faq/ask_impact
+  examples: |
+    - How would AI impact the Nigerian technological space in this present economy?
+
+# - intent: faq/ask_submit_idea
+#   examples: |
+#     - I want to submit a startup idea.
+
+- intent: faq/ask_events
+  examples: |
+    - When is your next hackathon?
+    - When is your next bootcamp?
+    - upcoming events
+    - your previous events
+    - what are your current events
+    - what are ncair current events
+    - what event is ncair currently hosting event
+    - when will you host your next events
+    - ncair next events
+    - ncair upcoming events
+
+- intent: faq/ask_events_requirements
+  examples: |
+    - What are the requirements for joining the hackathon?
+    - What are the requirements for joining the bootcamp?
+    - how to join bootcamp
+    - how to partake in hackathone
+    - participate in bootcamp
+    - participate in hackathone
+    - volunteer in your activities
+    - who can be part of your bootcamp
+    - how can i apply for sb4kids
+    - In What way can someone can apply for the SB4kids program?
+
+- intent: faq/ask_submit_project
+  examples: |
+    - Where can I submit my project portfolio?
+    - submit portfolio
+    - portfolio submit project
+    - how can i send project portfolio
+    - how can i send my project to ncair]
+    - how can to send project portfolio to the centre
+
+- intent: faq/ask_growth
+  examples: |
+    - How could NCAIR contribute to the growth of national economy?
+
+- intent: faq/ask_operational
+  examples: |
+    - Is the artificial intelligence sector up and running?
+
+- intent: faq/ask_collaboration_requirement
+  examples: |
+    - What are the requirements for collaboration with NCAIR?
+    - how can i collaborate with the centre?
+    - patrnership requirements
+    - how to join the ncair in area of collaboration?
+    - how to apply for collaborations, partnerships
+
+- intent: faq/ask_accept_interns
+  examples: |
+    - Does NCAIR accept Interns?
+    - Do you accept students
+    - Do you accept graduates
+
+- intent: faq/ask_collaborative
+  examples: |
+    - Is the center collaborative?
+    - collaborations with universities
+    - partnerships with universities, institutions, polytechics
+    - does ncair collaborate with the military?
+    - ncair collaboration with other agencies
+    - the centre partner other govt agencies?
+    - the centre partner other government ministries?
+
+- intent: faq/ask_focus
+  examples: |
+    - What are the focus areas of NCAIR?
+    - focus of ncair
+
+- intent: faq/ask_programs_initiatives
+  examples: |
+    - What are the programs and initiatives of NCAIR?
+
+- intent: faq/ask_website
+  examples: |
+    - The website link of NCAIR?
+    - ncairs web address
+    - website
+
+- intent: faq/ask_nitdaloca                                  
+  examples: |
+    - Where is nitda located?
+    - what is the official sit of nitda
+    - Where is nitda HQ located?
+    - what's nitda headquarters adress
+    - where's hq located
+    - physical address nitda
+    - nitda main office address                                                                                                                                                                              
+    - how can i get to the agency
+    - please, can help me with nitda's address
+    - where is nitda
+    - nitda office adress
+    - nitda addres
+    - adress nitda
+    - how to go to nitda in abuja
+    - Are there other addresses in abuja
+    - other nitda offices
+    - nitda offices in abuja
+
+
+- intent: faq/ask_location
+  examples: |
+    - Where is NCAIR located?
+    - what's your contact address
+    - what is the official sit of ncair
+    - how can the centre be contacted
+    - how can i locate the center
+    - how can i come to the centre
+    - how can i go to the centre
+    - ncair address
+    - physical adress
+    - your office address
+    - your contact please
+    - how can i get to the centre
+    - please, can help me with ncair's address
+    - your office address
+    - ncair office adress
+    - ncair addres
+    - adress ncair
+    - how to go to ncair in abuja
+    - ncair offices in abuja
+
+- intent: faq/ask_offices
+  examples: |
+    - Does ncair have other offices?
+    - zonal offices addresses
+    - zonal offices in nigeria
+    - does ncair have zonal offices across the country
+    - does ncair have other brances outside nigeria
+    - agency offices outside abuja
+    - offices in six geopolitical zones
+    - ncair brances in other nigerian cities
+    - ncair offices in other places in nigeria
+    - brances in other states
+    - branch of ncair
+    - how many ncair branch in nigeria
+    - zonal offices in other parts of nigeria
+    - zonal branches in other states 
+    - other locations of ncair in nigeria
+    - other addresses
+    - other ncair offices
+    - other offices
+    - are there other nitda offices in nigeria
+
+- intent: faq/ask_mission
+  examples: |
+    - What are the mission of the center?
+    - mission
+    - NCAIR mission
+    
+
+- intent: faq/ask_vision
+  examples: |
+    - What are the vision of the center?
+    - vission 
+    - NCAIR vision
+
+- intent: faq/ask_core_values
+  examples: |
+    - What are the core values of the center?
+    - values of ncair
+    - What are the core values of the ncair?
+    - ncair values
+    - organisation's core values
+    - National Centre for Artificial in telligence core values
+
+
+- intent: faq/ask_unit
+  examples: |
+    - how many units are there in ncair
+    - what are the divisions in ncair
+    - what units does the centre have?
+    - what are the names of divisions in ncair
+    - NCAIR units
+    - how many units does ncair have
+    - how many departments does ncair has
+    - what are the department in ncair
+
+
+- intent: faq/ask_plan
+  examples: |
+    - What is the center’s plan for the next few years?
+
+- intent: faq/ask_students_program
+  examples: |
+    - Do you have any programs for students?
+    - I am a student. How can I get involved in your student programs?
+- intent: faq/ask_goal
+  examples: |
+    - What is the center overall goals for this year? 
+    - Ncair goal 
+- intent: faq/ask_private_colaboration
+  examples: |
+    - Does NCAIR collaborate with private companies?
+    - can my private firm partner with ncair
+    - partnership with company, firm
+    
+- intent: faq/ask_access_ncair_learning
+  examples: |
+    - How do I join or access NCAIR Learning resources/materials?
+- intent: faq/ask_establish
+  examples: |
+    - When was NCAIR established?
+    - when was the centre created
+    - when was the centre establish
+    - ncair created
+    - when was ncair instituted
+    - ncair lunch
+
+- intent: faq/ask_engagement
+  examples: |
+    - How does the NCAIR plans to engage the public on AI technologies?
+- intent: faq/ask_open_close_time
+  examples: |
+    - What's the opening and closing time of NCAIR?
+    - What time can I visit NCAIR?
+    - ncair working hours ?
+    - What time can I visit the center?
+    - when does the centre open and close for bussiness
+    - ncair opening hours
+    - when does ncair open for business
+    - ncair working hours
+    - how long can i stay at the centre
+    - how long is a visitor allowed to stay at ncair
+- intent: faq/ask_eligibility
+  examples: |
+    - Who is eligible to use the Center's services?
+
+- intent: faq/ask_team
+  examples: |
+    - is there any team looking for someone with a specific skill to fill any gaps in knowledge?
+- intent: faq/ask_projects
+  examples: |
+    - What projects is the center working on now?
+    - What are the ongoing projects of NCAIR?
+    - What are your projects like?
+    - What projects is ncair working on now?
+
+- intent: faq/ask_requirement_candidate
+  examples: |
+    - What training and qualifications the ideal candidate must have to work on a project in the center?
+
+- intent: faq/ask_machines
+  examples: |
+    - What type of computers, machines do NCAIR have?
+    - what kind of machine are at ncair
+    - facilities at ncair
+    - what sorts of devices does the centre have
+- intent: faq/ask_research
+  examples: |
+    - What are the current research areas of NCAIR?
+    - Does NCAIR do research?
+
+- intent: faq/ask_dg
+  examples: |
+    - who heads national centre for artificial intelligence and robotics
+    - who heads the center
+    - the national director
+    - who is the leader of ncair
+    - who leads ncair 
+    - who's the nd
+    - NC of ncair
+    - ncair boss
+    - nd ncair
+    - who is ND of ncair
+    - ND of the centre
+    - who is the director of NCAIR
+    - who is the centre director
+    - who is the dg of ncair
+    - does ncair have a head
+    - does ncair have a national director
+- intent: out_of_scope
+  examples: |
+    - I want to order food
+    - dsahghgsahgdsa
+    - ncair, nitda logo
+    - What is 2 + 2?
+    - Who's the US President?
+    - what are you
+    - how accurate is ncair chatbot ?
+    - nigeria
+    - nigeria president
+    - what kkk
+    - how iii
+    - when iiiii
+    - who
+    - abuja
+    - number of staffs
+    - name 
+    - does Ncair pay interns
+    - does ncair pay interns
+    - ertyuiodfghm,...ttyytyyyyu
+    - name 
+    - ertyuiodfghm,...ttyytyyyyu
+    - xyz
+    - any food for me
+    - rrtddjj
+    - Nigeria, Africa
+    - I don't understand your answer
+    - ministry
+    - ondi
+    - ncc
+    - fmcd
+    - economy
+    - galaxy backbone
+    - nigcom sat
+    - nimc
+    - nipost
+    - I don't understand your response
+    - I don't understand your reply
+    - servicom unit
+    - police
+    - military
+    - security
+    - economy
+    - galaxy backbone
+    - nigcom sat
+    - nimc
+    - nipost
+    - pay interns
+    - ncair pay interns
+    - interns stipends
+    - allowance for interns
+    - interns salary
+    - staff salary
+    - ncair salary
+    - nitda salary
+
+- intent: faq/ask_project_examples
+  examples: |
+    - Are there any examples of past projects from the center?
+    - do you have projects
+    - have you done any projects
+    - projects done at the centre 
+    - previous projects 
+    - ncair projects 
+    - projects of ncair
+    - projects of the center
+- intent: faq/ask_dgnitda
+  examples: |
+    - who heads nitda
+    - National Information Technology Development Agency (NITDA)
+    - who heads the center
+    - the national director
+    - who is the leader of nitda
+    - who leads nitda 
+    - who's the gd
+    - nitda boss
+    - nd nitda
+    - who is ND of nitda
+    - ND of the centre
+    - who is the director of NITDA
+    - who is the agency director
+    - who is the dg of nitda
+    - does NITDA have a head
+    - does nitda have a national director
+
+# SB4Kids program
+
+- intent: faq/ask_sb
+  examples: |
+    - what's sb4kids program
+    - whta SB4KIDS?
+    - sb4kids
+    - Nitda stem-bootcamp
+    - what is STEM bootcamp for kids all about
+    - What program are available for kids under 8years?
+
+- intent: faq/ask_kidsprg
+  examples: |
+    - prgrams for children, kids
+    - kids,students prog
+    - what programs/events do you have for kids or students or pupils
+    - pupils' program
+    - do you have educational progrms for kids or students or pupils?
+
+- intent: faq/ask_online
+  examples: |
+    - do you offer online training for kids
+    - can kids take online classes
+    - do you have online classes
+    - training onlne
+    - does ncair have any online training for interested candidate
+    - are you programs accessible online
+
+- intent: faq/ask_tour
+  examples: |
+    - Do you offer tour for children in primary and Secondary school?
+    - can schools apply for tour
+    - can my school come for a tour at the centre
+    - can my school come for a tour at the ncair
+    - can i tour the centre
+
+
+- intent: faq/ask_geo
+  examples: |
+    - Do you have SB4kids programs in other states of Nigeria?
+    - sb4kids run in other states?
+
+- intent: faq/ask_stsb4kids
+  examples: |
+    - What date do the SB4kids program start?
+    - when does sb4kids commence
+    - how long does it run for?
+    - How do we know when to apply for SB4kids program?
+    - How do we know when to apply for stem101 program?
+    
+- intent: faq/ask_sb_acts
+  examples: |
+    - What are the various activities in the SB4kids program.
+    - what acts can a kid expects 
+    - any activity for sb4kids
+
+- intent: faq/ask_sb_ages
+  examples: |
+    - What are the required ages for children/Student that wants to apply?
+    - What program are available for kids under 8 years?
+    - is the event meant for pupils only?
+
+# visitations
+- intent: faq/ask_aides
+  examples: |
+    - does ncair have designated aides or guides for touring the facility?
+    - staffs to help tour the facility
+    - people to help me tor the center
+    - can i tour the centre
+
+
+- intent: faq/ask_photo
+  examples: |
+    - is a visitor allowed to take photos or videos in the center
+    - can i snap pics at the centre
+    - can videos be made in the facility
+- intent: faq/ask_work_interns
+  examples: |
+    - do you involve interns in day to day activities of the center?
+    - do your interns work hand in hand with the fulltime staff on projects?
+
+- intent: faq/ask_outsource
+  examples: |
+    - Does NCAIR outsource its projects and work with freelancers?
+    - does the centre outsource projects
+    - can projects be freelanced by the center
+
+#internship
+
+- intent: faq/ask_acceptance
+  examples: |
+    - I have secured the internship position, what should be my next line of action?
+    - what next to do after being accepted as intern
+
+- intent: faq/ask_equipment
+  examples: |
+    - What facility do I need to have before I can intern in NCAIR?
+    - what tool is needed for the internship, siwes, it
+
+- intent: faq/ask_sec
+  examples: |
+    - Can I intern at ncair after secondary school?
+    - Can I intern national centre for artificial intelligence and robptics after high school?
+    - Can I intern as a corp member?
+    - Can I intern after university?
+    - I am a graduate, can i intern at the centre
+    - Can I intern at ncair as a graduate?
+
+- intent: faq/ask_comp
+  examples: |
+    - Is it compulsory to have background knowledge in coding before applying?
+    - do I have to have computer science
+    - Most I finish secondry school 
+    - Must I finish University, Polythecnics
+    - Must I be a graduate
+    - does it only for engineering student?
+
+- intent: faq/ask_doc
+  examples: |
+    - What is the supporting document for Applying for the internship?
+    - what docs do i need to apply for internship, siwes, nan0internship, IT
+    - What are the procedures for Applying for Internship?
+
+- intent: faq/ask_inview
+  examples: |
+    - How is the interview process for internships like?
+    - what to expect at the interview?
+    - interview
+
+- intent: faq/ask_ncair_contact
+  examples: | 
+    - How can i contact NCAIR?
+    - how to contact the centre
+    - how to contact the ncair
+    - number of staffs
+    - how can the centre be contacted
+    - what's your contact address
+    - your contact please
+    - who to contact for questions about ncair
+    - your contact adress
+    - ncair helpline
+    - centre contact for help
+    - ncair contact for enquiries
+    - How do I report to NITDA?
+    - contact
+    - ncair contact
+
+- intent: faq/ask_handles
+  examples: | 
+    - social media handles
+    - how to contact you on social media
+    - social media contacts
+    - social media address
+    - social media accounts
+    - social media platforms
+    - ncair social media adress
+    - instagram username
+    - instagram handle
+    - twitter username 
+    - twitter handle 
+    - facebook handle 
+    - facebook username 
+
+- intent: faq/ask_ai
+  examples: | 
+    - can i effectively learn artificial artificial in your centre
+    - learn learn robotics, ai, emerging technologies
+    - acquire knowledge on robotics, ai, emerging tech 
+- intent: faq/ask_startup
+  examples: | 
+    - How does NCAIR assist start-ups in Nigeria?
+    - can my startup get help from the center
+    - can my startup be funded
+    - can my idea get support
+    - can my be incubated
+    - Do you support entrepreneaurs
+    - Do you support bussiness
+    - programs for startups
+    - do you have programs for start ups 
+    - What are the requirements for accepting startups who plans to work with NCAIR?
+    - requirements for startups to join ncair
+    - requirements for startups to partner with ncair
+    - requirements for startups to partner the centre
+    - I want to submit a startup idea
+    - company registration
+    - startup registration
+    - I have an innovative idea; can I get funding to develop it?
+    - can you support my company
+    - does ncair support companies
+    - Is NCAIR Drone unit going to be commercializing its produced drones to sectors for their various activities, if yes what is the procedure to attain it?
+    - do you sell your products
+    - are your reseaches for sell
+    - I want to register my startup
+    - I want register my company 
+
+- intent: faq/ask_supervision
+  examples: | 
+    - NCAIR is under which ministry 
+    - NITDA is under which ministry 
+    - NCAIR supervizing ministry 
+    - NITDA supervizing ministry 
+  
+- intent: faq/ask_nsupervision
+  examples: |
+    - NCAIR is under which agency 
+    - ncair is a subsidiary of which agency 
+
+- intent: faq/ask_em
+  examples: |
+    - what are emerging technologies
+    - emerging technologies examples 
+    - meaning of emerging technologies
+    - Industry 4.0
+    - 4th industrial revolution
+    - 4IR
+        
+- intent: faq/ask_nitdacontact
+  examples: |
+    - nitda contact
+    - nitda contact address
+    - nitda phone number 
+    - nitda helpline
+    - How can i contact NITDA?
+    - how to contact the agency
+    - how to contact the nitda
+    - how can the agency be contacted
+    - what's your contact address
+    - your contact please
+    - who to contact for questions about nitda
+    - your contact adress
+    - nitda helpline
+    - agency contact for help
+    - nitda contact for enquiries
+    - call for nitda help 
+
+- intent: faq/ask_aai
+  examples: | 
+    - What is the simple definition of AI?
+    - what is AI
+    - what does AI mean
+    - What is Artificial Intelligence
+
+- intent: faq/ask_roboticss
+  examples: | 
+    - What is the simple definition of Robotics?
+    - what is Robotics
+    - robots
+    - what does robotics mean
+
+- intent: faq/ask_min
+  examples: |
+    - which minister supervises nitda
+    - who is the minister controlling nitda
+    - minister incharge of nitda
+    - which minister supervises ncair
+    - who is the minister controlling ncair
+    - minister incharge of ncair
+#Data Protection
+- intent: faq/ask_reg_achieve
+  examples: | 
+    - What specific objectives is the Regulation meant to achieve?
+    - ndpr objectives
+    - the objectives of ndpr
+
+- intent: faq/ask_scope_ndpr
+  examples: | 
+    - What is the scope of the NDPR.
+    - who and what does ndpr covers
+    - The scope of the Nigeria Data Protection Regulation (NDPR)  
+    - Who does it apply to?
+    - does it apply to me as a data collector, controller, manager, engineer, firm
+    - is nigeria involved with data protection
+    - is ncair involved with data protection
+    - is the centre involved with data protection
+
+- intent: faq/ask_ndpr
+  examples: | 
+    - What is ndpr
+    - ndpr
+    - what does ndpr stand for
+    - ndpr mean
+    - The Nigeria Data Protection Regulation (NDPR)?
+- intent: faq/ask_nitda_mandate  
+  examples: |
+    - What is the mandate of NITDA?
+    - what is the nitda mandate
+    - agency's mandate
+    - responsibilities of nitda
+    - nitda responsiblities
+    - purpose of nitda
+    - nitda purpose
+    - What are the main Importance of NITDA in nigeria
+    - essence of nitda
+    - purpose of the agency
+- intent: faq/ask_role
+  examples: |
+    - what's the role of nitda
+    - role of the agency
+    - nitda roles
+    - what the future prospect of nitda
+- intent: faq/ask_nart
+  examples: | 
+    - What is NART?
+    - nart
+    - does nitda have an academy
+    - does ncair has an academy
+    - who is nart
+    - NITDA Academy For Research And Training
+
+- intent: faq/ask_iot
+  examples: | 
+    - What is iot?
+    - define iot
+    - what is internet of things
+
+- intent: faq/ask_block
+  examples: |
+    - blockchain
+    - define blockchain
+    - how does a blockchain work
+    - reasons for blochain
+    - use of blockchain
+
+- intent: faq/ask_drone
+  examples: |
+    - drone
+    - define drone
+    - uavs
+    - unmannned aerial vehicles
+- intent: faq/ask_fdrone
+  examples: |
+    - What is a drone used for?
+    - functions of drones
+    - functions of AUVs
+    - What is a auvs used for?
+    - What do most people use drones for?
+    - Why should you buy a drone?
+    - purpose of drones
+    - uses of drones
+    - reasons of drones
+    - what does drone do?
+
+- intent: faq/ask_vreality
+  examples: |
+    - virtual reality
+    - VR headset
+    - what does Vr headset mean
+    - define vr
+
+- intent: faq/ask_tech
+  examples: |
+    - technology
+    - why technology
+    - what's technology
+    - define technology
+
+- intent: faq/ask_ncairsub 
+  examples: |
+    - ncair subdivisions
+    - organogram of ncair
+    - What are the subdivisions of ncair?
+    - what are the structure of ncair
+    - semi-autonomous bodies of nitda
+
+- intent: faq/ask_fab 
+  examples: |
+    - what's a fablab
+    - fabrication laboratory
+    - define a fablab
+    - fablab
+    - explain fablab
+  
+- intent: faq/ask_fabtools
+  examples: |
+    - What type of equipments can be found in a FabLab?
+    - tools in the fablab
+    - working tools at ncair fablab
+    - facilities at the fablab
+- intent: faq/ask_fabfuncs
+  examples: |
+    - services the lab provides
+    - functions of fablab
+    - uses of fablab
+    - importance of fablab
+    - significance of fablab
+    - what does the fablab do
+    - benefits of fablab
+
+- intent: faq/ask_nitdaoffices
+  examples: |
+    - Does nitda have other offices?
+    - nitda zonal offices addresses
+    - nitda zonal offices in nigeria
+    - does nitda have zonal offices across the country
+    - does nitda have other brances outside nigeria
+    - agency offices outside abuja
+    - nitda offices in six geopolitical zones
+    - nitda brances in other nigerian cities
+    - nitda offices in other places in nigeria
+    - nitda brances in other states
+    - how many NITDA branch in nigeria
+    - nitda zonal offices in other parts of nigeria
+    - nitda zonal branches in other states 
+    - other locations of nitda in nigeria
+    - other nitda addresses
+    - other nitda offices
+    - are there other nitda offices in nigeria

@@ -1,0 +1,423 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- faq:
+    use_entities: true
+- nlu_fallback:
+    use_entities: true
+- out_of_scope:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_greet:
+  - text: Good day, welcome to NCAIR. How may I help you?
+  utter_out_of_scope:
+  - text: Sorry, I'm a baby. I'm not sure of your request.
+  utter_goodbye:
+  - text: Bye, thanks for visiting NCAIR.
+  utter_default: 
+  - text: |
+         Sorry, I don’t understand the question. You can reach our helpline on +2348178778501 or email: ncair@nitda.gov.ng for further clarification.
+  utter_iamabot:
+  - text: I am a Virtual Assistant, powered by NCAIR.
+  utter_faq/ask_email:
+  - text: ncair@nitda.gov.ng
+  utter_faq/ask_nitdaemail:
+  - text: info@nitda.gov.ng
+  utter_faq/ask_phone:
+  - text: |
+          You can call us on: +2348178778499, +2348178778501.
+  utter_faq/ask_ncair:
+  - text: NCAIR - National Centre for Artificial Intelligence and Robotics is one of the National Information Technology Development Agency's special purpose vehicles created to promote research and development on emerging technologies and their practical application in areas of Nigerian national interest.
+  utter_faq/ask_ncairacronm:
+  - text: NCAIR simply means National Centre for Artificial Intelligence and Robotics.
+  utter_faq/ask_nitda:
+  - text: National Information Technology Development Agency (NITDA) is a public service institution established by NITDA Act 2007 as the ICT policy implementing arm of the Federal Ministry of Communications and Digital Economy of the Federal Republic of Nigeria.
+  utter_faq/ask_nitdaacronm:
+  - text: NITDA simply means National Information Technology Development Agency.
+  utter_faq/ask_achievement:
+  - text: |
+        Some of the projects done at the center are:
+          * AI Applications: Document Redaction App, Fundus AI, Elonosia AI, etc. 
+          * Industrial Robots & Drones for precision farming. 
+          * Educational Robots for training and research purposes. 
+        For up-to-date list of our projects, kindly visit https://ncair.nitda.gov.ng/projects.
+  utter_faq/ask_relationship_nitda:
+  - text: NCAIR is a subsidiary of the National Information Technology Development Agency (NITDA), which will serve as a leading hub of innovation, research and development, knowledge transfer, and training in the areas of emerging technologies.
+  utter_faq/ask_robotics:
+  - text: Yes, robots will help reduce human efforts, improve production, and advance digital ecosystem.
+  utter_faq/ask_purpose:
+  - text: NCAIR aims at transforming the Nigerian digital economy in line with the National Digital Economy Policy and Strategy (NDEPS).
+  utter_faq/ask_opentoeveryone:
+  - text: NCAIR is open to all individuals who are interested in emerging technologies.
+  utter_faq/ask_applyjob:
+  - text: For any available job vacancies, kindly visit NITDA's website at https://nitda.gov.ng/disclaimer/.
+  utter_faq/ask_internship:
+  - text: Irrespective of your educational qualification, you can apply for Nano-internship at NCAIR.
+  utter_faq/ask_howinternship:
+  - text: Get a reference letter from your institution and submit it to NITDA’s HQ at Area 11, 28 Port Harcourt Crescent, Off Gimbiya St, Garki, Abuja. 
+  utter_faq/ask_posttoncair:
+  - text: NYSC office is responsible for posting coppers to any government establishments.
+  utter_faq/ask_nanointern:
+  - text: For requirements on Nano-internship, kindly visit our office at Plot No. 790, Cadastral zone B03, Wuye district, Abuja FCT.
+  utter_faq/ask_facility:
+  - text: NCAIR is a research center open to student or individual whose interest or training is in line with NCAIR mandate. You are therefore advised to formerly write an application, submit to the center, and await approval.
+  utter_faq/ask_recruiting:
+  - text: There are no current vacancies for employment at NCAIR. Vacancies shall be advertised in the National newspapers and on NITDA's website at https://nitda.gov.ng/disclaimer/.
+  utter_faq/ask_happens:
+  - text: Research and development in emerging technologies.
+  utter_faq/ask_work:
+  - text: Anybody can work at NCAIR. Vacancies shall be advertised in the National newspapers and on NITDA's website at https://nitda.gov.ng/disclaimer/.
+  utter_faq/ask_sponsorship:
+  - text: Through our internship program.
+  utter_faq/ask_sell:
+  - text: No, but we can partner in developing the idea and link up with prospective buyer.
+  utter_faq/ask_data:
+  - text: Yes, NCAIR source its data through different methods including primary and secondary sources.
+  # utter_faq/ask_assist:
+  # - text: NCAIR Assist start-ups in Nigeria through our programs such as Future hack, Startup Clinic, Acceleration programs and iHatch. For more info on this kindly visit our website on www.ncair.nitda.gov.ng.
+  utter_faq/ask_elearning:
+  - text: |
+          Yes, to access our e-learning resources kindly visit https://academy.nitda.gov.ng.
+  utter_faq/ask_ngo:
+  - text: It is not. NCAIR is established as a subsidiary of the National Information Technology Development Agency (NITDA).
+  utter_faq/ask_accept_interns:
+  - text: |
+          Yes, you can apply for internship at NCAIR. Get a reference letter from your institution and submit to NITDA’s office. Area 11, 28 Port Harcourt Crescent, Off Gimbiya St, Garki, Abuja. For more information on similar opportunities kindly follow us on our social media platforms on Twitter, Facebook, Instagram, and LinkedIn via @NCAIRNigeria or kindly visit our website: https://nitda.gov.ng.
+  utter_faq/ask_website:
+  - text: https://ncair.nitda.gov.ng.
+  utter_faq/ask_location:
+  - text: NCAIR is located at Plot 790, Cadastral zone B03, Wuye District Abuja, Nigeria.
+  utter_faq/ask_mission:
+  - text: |
+         To accelerate research and development of innovative digital technologies in Nigeria, enable collaboration and build an enabling environment for innovation in emerging technologies.
+  utter_faq/ask_vision:
+  - text: |
+         To foster development of Nigeria's digital ecosystem through research and innovation in emerging technologies. 
+
+  utter_faq/ask_nitdaloca:
+  - text: |
+      NITDA HQ is located at No. 28, Port Harcourt Crescent, Off Gimbiya Street, P.M.B 564, Area 11, Garki, Abuja, Nigeria.
+      The other offices locations in Abuja are:
+      * Plot No. 790, Cadastral zone B03, Wuye, Abuja.
+      * Agatu Crescent, off Gimbiya street, Area 11 Garki, Abuja.
+      * No. 5 Donau Crescent off Amazone street, Maitama, Abuja.
+
+  utter_faq/ask_collaboration_requirement:
+  - text: | 
+         For requirements on collaborations, kindly check our collaborations and partnerships guidelines/requirements page at https://ncair.nitda.gov.ng/collaboration.
+
+  utter_faq/ask_core_values:
+  - text: |
+        * Innovation 
+        * Cooperation and collaboration 
+        * Cutting-edge Research
+        * Sustanability 
+        * People and Sociaty 
+  utter_faq/ask_plan:
+  - text: The NCAIR’s plan for the next few years is to create an ethical workspace to foster research that drives digital innovation in emerging technologies.
+  utter_faq/ask_collaborative:
+  - text: NCAIR encourage collaborations, kindly check our collaborations and partnerships guidelines/requirements at https://ncair.nitda.gov.ng/collaboration.
+  utter_faq/ask_goal:
+  - text: NCAIR’s overall goal is to continue research in emerging technologies.
+  utter_faq/ask_join_ncair:
+  - text: Submit your application to NITDA.
+  utter_faq/ask_focus:
+  - text: |
+          NCAIR primarily focus on the following:
+          * Robotics and Drones 
+          * Artificial Intelligence 
+          * Virtual Reality and Augmented reality 
+          * Blockchain 
+          * Internet of Things (IoT) 
+          * Collaboration 
+          * Start-up development
+  utter_faq/ask_unit:
+  - text: |
+          NCAIR has 3 units, which are: 
+          * Innovation and Prototyping (I&P)
+          * Corporate Affairs and Adovocacy   
+          * Research and Collaboration (R&C)
+  utter_faq/ask_open_close_time:
+  - text: NCAIR opens from 8:30am to 4:30pm weekdays.
+  utter_faq/ask_students_program:
+  - text: We have an annual STEM Bootcamp for Kids (SB4Kids) for 8 - 16 year old. Older students can apply for internships.
+  utter_faq/ask_private_colaboration:
+  - text: Yes, NCAIR engages in collaborative partnerships with both public and private institutions. 
+  utter_faq/ask_access_ncair_learning:
+  - text: We are encouraged to learn of your plan for further skills development, Kindly visit https://academy.nitda.gov.ng for our educational materials and other resource documents.
+  utter_faq/ask_eligibility:
+  - text: NCAIR is open to all individual who are interested in ICT, Artificial Intelligence and Robotics, research & development in areas of emerging technologies.
+  utter_faq/ask_establish:
+  - text: It was commissioned on 13th November 2020 by Hon. Minister of Communication and Digital Economy, Prof. Isa Ali Ibrahim Pantami.
+  utter_faq/ask_engagement:
+  - text: Through its various initiatives such as Workshops, Conferences and so on as well as collaboration with organizations/institutions.
+  utter_faq/ask_mentors:
+  - text: We have staff that can provide basic mentorship or guidance in areas of Research & Development in emerging technology and ICT innovation driven enterprises.
+  # utter_faq/ask_acceptstartups:
+  # - text: Yes, NCAIR accepts startups that leverage on technology to provide solutions.
+  # utter_faq/ask_startups_requirement:
+  # - text: Startups interested in working with NCAIR must first be registered on https://innovationportal.nitda.gov.ng/.
+  utter_faq/ask_training_period:
+  - text: Depending on the training, it ranges from 2 days to 2 weeks long.
+  utter_faq/ask_growth:
+  - text: By creating a thriving ecosystem for innovation-driven enterprises and job creation.
+  utter_faq/ask_resources:
+  - text: The center has both human resources and advanced computing machinery.
+  utter_faq/ask_impact:
+  - text: Artificial Intelligence will help reduce human efforts, improve production, and advance digital ecosystem.
+  utter_faq/ask_training_offer:
+  - text: Absolutely. Training is offered through our internship program.
+  utter_faq/ask_operational:
+  - text: The artificial intelligence sector is operational.
+  utter_faq/ask_attendance_support:
+  - text: At the moment, we do not support external conferences, kindly write to the center for further consideration.
+  utter_faq/ask_events:
+  - text: All NCAIR events can be found at https://ncair.nitda.gov.ng/events/category/ncair-events/list/. Also, announcement will be made on our social media platforms on Twitter, Facebook, Instagram, and LinkedIn via @NCAIRNigeria.
+  # utter_faq/ask_support_company_idea:
+  # - text: Yes! NCAIR can help develop an idea. However, you need to sign up for our startup program for screening.
+  utter_faq/ask_funding:
+  - text: Yes, through our Fablab.
+  utter_faq/ask_events_requirements:
+  - text: Requirements are always included in our adverts, kindly follow our social media platforms on Twitter, Facebook, Instagram, and LinkedIn via @NCAIRNigeria for upcoming program announcement.
+  utter_faq/ask_certification:
+  - text: Yes, at NCAIR we offer numerous training programs. Upon completion, a certificate is issued to successful participants.
+  utter_faq/ask_training_fee:
+  - text: All NITDA/NCAIR trainings or capacity building programs are FREE.
+  # utter_faq/ask_submit_idea:
+  # - text: Startups interested in working with NCAIR must first be registered on https://innovationportal.nitda.gov.ng/ and then register for iQuest program for screening.
+  utter_faq/ask_submit_project:
+  - text: |
+        * To submit an e-project portfolio, kindly send it to info@nitda.gov.ng and copy ncair@nitda.gov.ng.
+        * For a physical portfolio, address it to the Director General of NITDA and copy the National Director, NCAIR and submit at Plot 790, Cadastral Zone B03, Wuye District, Abuja, FCT.
+  utter_faq/ask_learn:
+  - text: By engaging them in one of our focus project initiatives in the center.
+  utter_faq/ask_dg:
+  - text: NCAIR is headed by a National Director in person of Engr. Ya'u Garba. More information maybe found at https://ncair.nitda.gov.ng/?page_id=2372.
+  utter_faq/ask_machines:
+  - text: |
+         NCAIR has latest computing machines which include: Printed Circuit Board (PCB) production equipment, CNC machines, 3D printers, Servers, etc.
+  utter_faq/ask_projects:
+  - text: |
+          The center is currently working on the following projects:
+          * Electronics Body Vitals Sign Monitoring System (E-vitals)
+          * Mobile Robots for Logistics 
+          * Industrial Robot Arm
+          * Smart Home System 
+          * Drones for Agricultural & Surveillance applications 
+          * AI based Chatbot 
+          * Special Training Programs on (STEM, AI, Robotics, Drone, Digital Communication, IoT, VR)
+  utter_faq/ask_school:
+  - text: School can participate by applying through the NCAIR portal.
+  utter_faq/ask_organize_training:
+  - text: Yes, through its various initiatives such as Workshops, Conferences and so on as well as collaboration with organizations/institutions.
+  utter_faq/ask_capacity_building:
+  - text: The statistics of individuals trained by the center is available on our websites. kindly visit https://ncair.nitda.gov.ng.
+  utter_faq/ask_project_examples:
+  - text: |
+        Some of the projects done at the center are:
+          * AI Applications: Document Redaction App, Fundus AI, Elonosia AI, etc. 
+          * Industrial Robots & Drones for precision farming. 
+          * Educational Robots for training and research purposes. 
+        For up-to-date list of our projects, kindly visit https://ncair.nitda.gov.ng/projects.
+  utter_faq/ask_advance_training:
+  - text: Not at the moment, however the center offers mentorship through its various initiatives.
+          kindly follow us on our social media platforms on Twitter, Facebook, Instagram, and LinkedIn via @NCAIRNigeria for possible advert on our initiatives.
+  # utter_faq/ask_commercialize:
+  # - text: No, we work with our start-up to commercialize any of our ideas.
+  utter_faq/ask_team:
+  - text: Not at the moment, requirements are always included in our adverts, kindly follow our social media platforms on Twitter, Facebook, Instagram, and LinkedIn via @NCAIRNigeria for upcoming program announcement.
+  utter_faq/ask_research:
+  - text: Our current research areas are on Emerging Technologies.
+  utter_faq/ask_requirement_candidate:
+  - text: No qualification is required to work on a project in the center, however your project need to be leveraging on ICT.
+  utter_faq/ask_programs_initiatives:
+  - text: |
+          * STEM Bootcamp for Kids (SB4Kids) 
+          * Intern Knowledge Sharing and Ideation Session (iKSIS) 
+          * Virtual and Nano-Internships
+          * And others
+  utter_faq/ask_dgnitda:
+  - text: NITDA is headed by a Director-General in person of Mr. Kashifu Inuwa Abdullahi, CCIE. More information maybe found at https://nitda.gov.ng/kashifu-inuwa-abdullahi-ccie/.
+
+# sb4kids
+  utter_faq/ask_sb:
+  - text: SB4Kids (NITDA STEM Bootcamp for Kids) is a bootcamp designed to inspire young Nigerians in the fields of Science, Technology, Engineering and Mathematics (STEM).
+  utter_faq/ask_kidsprg:
+  - text: Glad you asked! We have NITDA STEM Bootcamp for Kids (SB4Kids).
+  utter_faq/ask_online:
+  - text: Online training can be done at https://academy.nitda.gov.ng.
+  utter_faq/ask_tour:
+  - text: Yes, we do give a tour to schools that apply to the centre for excursion.
+  utter_faq/ask_geo:
+  - text: Yes, we do have Sb4kids program in the six (6) geopolitical zones.
+  utter_faq/ask_stsb4kids:
+  - text: Sb4kids program normal take place during the long holiday—August-September.
+  utter_faq/ask_sb_acts:
+  - text: |
+        We have a lot of activities in SB4kids which include: Virtual reality, Artificial intelligence, Digital communication, 3D printing, Coding, etc.
+  utter_faq/ask_sb_ages:
+  - text: SB4kids is for kids between the ages of 8 and 16 years.
+  
+# visitations
+  utter_faq/ask_aides:
+  - text: Yes, we do have designated aid for touring the facility.
+  utter_faq/ask_photo:
+  - text: Yes. There is no photo restrictions in the centre.
+  utter_faq/ask_work_interns:
+  - text: Yes, interns are involved in research and receive support in their own personal projects.
+  utter_faq/ask_outsource:
+  - text: No, NCAIR does not outsource its projects. However NCAIR collaborates with external tech organisations.
+
+# internship
+  utter_faq/ask_acceptance:
+  - text: Congratulations! Just make your way to the center for orientation and documentation.
+  utter_faq/ask_equipment:
+  - text: All you need is a laptop for your convenience, but it’s not compulsory.
+  utter_faq/ask_sec:
+  - text: Yes, you can join the nano-internship program.
+  utter_faq/ask_comp:
+  - text: It is not compulsary.
+  utter_faq/ask_doc:
+  - text: |
+       * For NYSC corps members, your posting letter must be sent to NITDA. 
+       * For SIWES, a letter from your school must be sent to NITDA, addressed to the DG and copying the National Director, NCAIR. 
+       * For Nano-internships, a form can be picked up at the NCAIR office. Approval for Nano-internships is at the discretion of the National Director, NCAIR.
+  utter_faq/ask_inview:
+  - text: Staff of the agency will ask the intended intern some questions related to their own relevant experience and what we do at the centre.
+
+  utter_faq/ask_offices:
+    - text: |
+        Currently, NCAIR is only located at Plot 790, Cadastral zone B03, Wuye District Abuja, Nigeria.
+        However, NITDA has Zonal offices at:
+        * South West office: No. 9 Kofo Abayomi Street Victoria Island, Lagos State. Email: swzo@nitda.gov.ng. Phone: +2348168401851
+        * South-South office: No. 5 Mission Avenue, Opposite Trans Amadi, Rivers State. Email: sszo@nitda.gov.ng. Phone: +2348168401851
+        * North West: Plot No. 168 Sheik Nasiru Kabara Housing Estate, Kano State. Email: nwzo@nitda.gov.ng. Phone: +2348168401851
+        * North East: Plot No. BA/15917, AShaka Road, Opposite Federal Teaching Hospital, Gombe State. Email: nezo@nitda.gov.ng. Phone: +2348168401851
+
+  utter_faq/ask_ncair_contact:
+  - text: |
+      You can contact us through the following:
+      * Phone: +2348178778499, +2348178778501
+      * Email: ncair@nitda.gov.ng
+
+  utter_faq/ask_handles:
+  - text: |
+      Kindly follow us on our social media platforms on Twitter, Facebook, Instagram, and LinkedIn via @NCAIRNigeria.
+  utter_faq/ask_ai:
+  - text: |
+      Yes, send an email to ncair@nitda.gov.ng expressing your interest.
+  utter_faq/ask_startup:
+  - text: |
+       For all enquiries related to startups, please reach out to the Office for Nigerian Digital Innovation at https://ondi.nitda.gov.ng/.
+
+  utter_faq/ask_supervision:
+  - text: |
+       Federal Ministry of Communications and Digital Economy of the Federal Republic of Nigeria.
+
+  utter_faq/ask_nsupervision:
+  - text: |
+        It is a subsidiary of National Information Technology Development Agency (NITDA).
+          
+  utter_faq/ask_em:
+  - text: |
+        Emerging technology is a term generally used to describe a new technology:
+        They include: artificial intelligence (AI), augmented reality (AR), blockchain, drones, Internet of Things (IoT), robotics, 3D printing and virtual reality (VR).
+
+  utter_faq/ask_nitdacontact:
+  - text: |
+      You can contact us through the following:
+      * Phone: +2347052420189, +2348168401851
+      * Email: info@nitda.gov.ng
+
+  utter_faq/ask_aai:
+  - text: |
+        Artificial intelligence (AI) is the simulation of human intelligence processes by machines, especially computer systems.
+
+  utter_faq/ask_roboticss:
+  - text: |     
+        Robotics is a branch of engineering that involves the conception, design, manufacture and operation of robots. 
+
+  utter_faq/ask_min:
+  - text: Prof. Isa Ali Pantami, FNCS, FBCS, FIIM, MCPN
+
+  utter_faq/ask_reg_achieve:
+  - text: The objectives of the NDPR are data privacy protection; secure exchange of data; improve business environment and create sustainable jobs.
+  utter_faq/ask_scope_ndpr:
+  - text: It applies to public and private sector processing personal data within and outside Nigeria.
+  utter_faq/ask_ndpr:
+  - text: The Nigeria Data Protection Regulation (NDPR) was issued in January 2019 pursuant to Section 6 (a,c) of the NITDA Act 2007. The Regulation is the current National law on data protection in Nigeria. Please visit https://ndpr.nitda.gov.ng/ for further details.
+  utter_faq/ask_nitda_mandate:
+  - text: NITDA's mandate is to create a framework for the planning, research, development, standardization, application, coordination, monitoring, evaluation and regulation of information technology practices in Nigeria.
+  utter_faq/ask_role:
+  - text: To develop, regulate and advise on Information technology in the country through regulatory standards, guidelines and policies.
+  utter_faq/ask_nart:
+  - text: NART is the NITDA Academy for Research and Training.
+  utter_faq/ask_iot:
+  - text: The term IoT, or Internet of Things, refers to the collective network of connected devices and the technology that facilitates communication between them and the cloud.
+  utter_faq/ask_block:
+  - text: Blockchain is essentially a digital ledger of transactions that is duplicated and distributed across the entire network of computer systems on the blockchain.
+  utter_faq/ask_drone:
+  - text: The term “drone”, sometimes referred to as “Unmanned Aerial Vehicles" (UAVs), usually refers to any unpiloted aircraft.
+  utter_faq/ask_fdrone:
+  - text: Drones now have many functions, ranging from monitoring climate change to carrying out search operations after natural disasters, filming, and delivering goods, reconnaissance, surveillance, etc.
+  utter_faq/ask_vreality:
+  - text: Virtual reality is the term used to describe a three-dimensional, computer generated environment which can be explored and interacted with by a person.
+  utter_faq/ask_tech:
+  - text: Technology is the way we apply scientific knowledge for practical purposes. 
+  utter_faq/ask_ncairsub:
+  - text: See the centre's organogram at https://ncair.nitda.gov.ng/organogram.
+  utter_faq/ask_fab:
+  - text: A Fab Lab, or Fabrication Laboratory, is a technical prototyping platform for innovation and invention, providing stimulus for local entrepreneurship. 
+  utter_faq/ask_fabtools:
+  - text: |
+        It's equiped with the state-of-the-art machinery and equipments such as: Lasers, 3D printers, ShopBot, etc.
+  utter_faq/ask_fabfuncs:
+  - text: |
+        The Fab Lab provides some of the following services:
+         * Provide non-specialists with an access to sophisticated technologies, so that they can explore, learn and make.
+         * Help develop both hard (e.g. electronics, 3D modelling, 3D printing, robotics) and soft (creativity, design thinking, prototyping) engineering skills.
+         * Serve as business incubation environment and help develop entrepreneurial skill, etc.
+
+  utter_faq/ask_whatnano:
+  - text: |
+         Nano-internship is short-term internship (1-3 months) for people who are interested in learning and researching emerging technologies.
+
+  utter_faq/ask_nitdaoffices:
+  - text: |
+     NITDA can also be located at:
+      * South West office: No. 9 Kofo Abayomi Street Victoria Island, Lagos State. Email: swzo@nitda.gov.ng. Phone: +2348168401851
+      * South-South office: No. 5 Mission Avenue, Opposite Trans Amadi, Rivers State. Email: sszo@nitda.gov.ng. Phone: +2348168401851
+      * North West: Plot No. 168 Sheik Nasiru Kabara Housing Estate, Kano State. Email: nwzo@nitda.gov.ng. Phone: +2348168401851
+      * North East: Plot No. BA/15917, AShaka Road, Opposite Federal Teaching Hospital, Gombe State. Email: nezo@nitda.gov.ng. Phone: +2348168401851
+
+
+
+
+actions:
+- utter_greet
+- utter_goodbye
+- utter_iamabot
+- utter_out_of_scope
+- utter_default
+- utter_faq
+- action_default_fallback
+forms: {}
+e2e_actions: []

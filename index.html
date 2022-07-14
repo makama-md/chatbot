@@ -1,0 +1,40 @@
+<html>
+    <body>
+        <style>
+          .rw-conversation-container .rw-header{background-color: green;}
+          .rw-conversation-container .rw-messages-container .rw-message .rw-response{background-color:green;color:#fff;font-size:medium; text-align:justify;}
+          .rw-conversation-container .rw-messages-container .rw-message .rw-client{background-color:#11324D;}
+          .rw-launcher{background-color: green}  
+      </style>
+        <script>!(function () {
+            let e = document.createElement("script"),
+              t = document.head || document.getElementsByTagName("head")[0];
+            (e.src =
+              "https://cdn.jsdelivr.net/npm/rasa-webchat@1.x.x/lib/index.js"),
+              // Replace 1.x.x with the version that you want
+              (e.async = !0),
+              (e.onload = () => {
+                window.WebChat.default(
+                  {
+                    initPayload: '/greet',
+                    customData: { language: "en" },
+                    socketUrl: "http://localhost:5005",
+                    title: 'NCAIR Bot',
+                    subtitle: ' Welcome to NCAIR!',
+                    profileAvatar: "nitdalogo.png",
+                    showMessageDate: "true",
+                    inputTextFieldHint:"Type your question(s) here",
+                    // openLauncherImage: "nitdalogo.png"
+                    // add other props here
+                  },
+                  null
+                );
+              }),
+              t.insertBefore(e, t.firstChild);
+              
+          })();
+          localStorage.clear();
+          </script>
+          
+    </body>
+</html>
