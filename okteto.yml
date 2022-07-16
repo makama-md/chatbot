@@ -1,4 +1,4 @@
-name: ncair
+name: chatbot
 autocreate: true
 image: rasa-server:latest
 command: bash
