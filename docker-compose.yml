@@ -27,6 +27,7 @@ services:
     working_dir: "/app"
     ports:
     - '5055:5055'
+    public: true
     networks:
     - all
 
