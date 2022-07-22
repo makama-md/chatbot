@@ -44,8 +44,8 @@ dev:
     command:
       - bash
       - -c
-      - rasa,
-      - run,
+      - rasa
+      - run
       - actions
     sync:
       - actions:/app/actions
