@@ -1,66 +1,13 @@
 name: chatbot
-
-# The build section defines how to build the images of your development environment
-# More info: https://www.okteto.com/docs/reference/manifest/#build
-build:
-
-  # You can use the following env vars to refer to this image in your deploy commands:
-  #  - OKTETO_BUILD_RASA-ACTIONS-SERVER_REGISTRY: image registry
-  #  - OKTETO_BUILD_RASA-ACTIONS-SERVER_REPOSITORY: image repo
-  #  - OKTETO_BUILD_RASA-ACTIONS-SERVER_IMAGE: image name
-  #  - OKTETO_BUILD_RASA-ACTIONS-SERVER_TAG: image tag
-  rasa-actions-server:
-    context: .
-    dockerfile: Dockerfile
-    image: rasa-bot:latest
-
-  # You can use the following env vars to refer to this image in your deploy commands:
-  #  - OKTETO_BUILD_RASA-SERVER_REGISTRY: image registry
-  #  - OKTETO_BUILD_RASA-SERVER_REPOSITORY: image repo
-  #  - OKTETO_BUILD_RASA-SERVER_IMAGE: image name
-  #  - OKTETO_BUILD_RASA-SERVER_TAG: image tag
-  rasa-server:
-    context: .
-    dockerfile: Dockerfile
-    image: rasa-bot:latest
-
-# The deploy section defines how to deploy your development environment
-# More info: https://www.okteto.com/docs/reference/manifest/#deploy
-deploy:
-  compose:
-    file: docker-compose.yml
-
-# The dependencies section defines other git repositories to be deployed as part of your development environment
-# More info: https://www.okteto.com/docs/reference/manifest/#dependencies
-# dependencies:
-#   - https://github.com/okteto/sample
-
-
-# The dev section defines how to activate a development container
-# More info: https://www.okteto.com/docs/reference/manifest/#dev
-dev:
-  rasa-actions-server:
-    image: rasa-bot:latest
-    command:
-      - bash
-      - -c
-      - rasa
-      - run
-      - actions
-    sync:
-      - actions:/app/actions
-    forward:
-      - 5055:5055
-  rasa-server:
-    image: rasa-bot:latest
-    command:
-      - sh
-      - -c
-      - bash -c "rm -rf models/* && rasa train && rasa run --enable-api --cors \"*\" -p 8080"
-    sync:
-      - actions:/app/actions
-      - data:/app/data
-      - models:/app/models
-    forward:
-      - 5005:8080
-
+autocreate: true
+image: rasa-server:latest
+image: rasa-actions-server:latest
+command: bash
+volumes:
+- /root/.cache/pip
+sync:
+- .:/app
+forward:
+- 8080:8080
+reverse:
+- 9000:9000
