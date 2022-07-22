@@ -1,7 +1,7 @@
 name: chatbot
 autocreate: true
 image: rasa-server:latest
-image: rasa-actions-server:latest
+# image: rasa-actions-server:latest
 command: bash
 volumes:
 - /root/.cache/pip
