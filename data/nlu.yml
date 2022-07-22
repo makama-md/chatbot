@@ -190,6 +190,8 @@ nlu:
 - intent: faq/ask_opentoeveryone
   examples: |
     - Is NCAIR opened to everyone?
+    - is ncair open to the public
+    - is the centre open to the public
     - is NCAIR open outsiders for practical activities
     - who can visit the centre
     - can i visit the fablab
@@ -552,6 +554,9 @@ nlu:
     - Are there other addresses in abuja
     - other nitda offices
     - nitda offices in abuja
+    - nitda location 
+    - other locations of nitda in nigeria
+
 
 
 - intent: faq/ask_location
@@ -575,6 +580,8 @@ nlu:
     - adress ncair
     - how to go to ncair in abuja
     - ncair offices in abuja
+    - ncair location 
+    
 
 - intent: faq/ask_offices
   examples: |
@@ -597,6 +604,7 @@ nlu:
     - other ncair offices
     - other offices
     - are there other nitda offices in nigeria
+    
 
 - intent: faq/ask_mission
   examples: |
