@@ -304,6 +304,9 @@ nlu:
     - is ncair currently hiring
     - is ncair presently hiring  
     - can i be hired
+    - available jobs
+    - recruitment
+    - job vacancies
     - is ncair offering jobs 
     - are you recruiting
     - are you hiring
@@ -726,6 +729,7 @@ nlu:
     - NC of ncair
     - ncair boss
     - nd ncair
+    - Engineer Ya'u Garba
     - who is ND of ncair
     - ND of the centre
     - who is the director of NCAIR
@@ -809,6 +813,7 @@ nlu:
     - who is the leader of nitda
     - who leads nitda 
     - who's the gd
+    - Kashifu Inuwa Abdullahi
     - nitda boss
     - nd nitda
     - who is ND of nitda
