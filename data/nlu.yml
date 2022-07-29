@@ -541,6 +541,7 @@ nlu:
 - intent: faq/ask_nitdaloca                                  
   examples: |
     - Where is nitda located?
+    - where is nitda
     - what is the official sit of nitda
     - Where is nitda HQ located?
     - what's nitda headquarters adress
@@ -565,6 +566,8 @@ nlu:
 - intent: faq/ask_location
   examples: |
     - Where is NCAIR located?
+    - where is ncair
+    - where is the centre
     - what's your contact address
     - what is the official sit of ncair
     - how can the centre be contacted
@@ -856,6 +859,7 @@ nlu:
   examples: |
     - Do you offer tour for children in primary and Secondary school?
     - can schools apply for tour
+    - can school apply for excursion
     - can my school come for a tour at the centre
     - can my school come for a tour at the ncair
     - can i tour the centre
