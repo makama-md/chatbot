@@ -130,7 +130,6 @@ nlu:
 - intent: faq/ask_nitda
   examples: |
     - What's nitda?
-    - who is nitda
     - is nitda an agency of govt
     - nitda agency of government?
     - is the centre an agency of government?
